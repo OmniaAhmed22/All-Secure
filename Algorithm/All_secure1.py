@@ -12,11 +12,11 @@ print("Connection to arduino...")
 
                                   #training
 #reading my pic
-person1 = face_recognition.load_image_file("C:/Users/Ebtesam/Desktop/Project/person1.jpg")
+person1 = face_recognition.load_image_file("person1.jpg")
 #encoding face features from my pic.
 encoding_person1 = face_recognition.face_encodings(person1)[0]
 
-person2 = face_recognition.load_image_file("C:/Users/Ebtesam/Desktop/Project/person2.jpg")
+person2 = face_recognition.load_image_file("person2.jpg")
 encoding_person2 = face_recognition.face_encodings(person2)[0]
 
 
