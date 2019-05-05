@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat May  4 17:13:33 2019
-
-@author: Ebtesam
-"""
 
 import cv2
 import face_recognition
