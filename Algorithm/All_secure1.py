@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+# using deeplearning library of face recognition 
 import cv2
 import face_recognition
 import time
@@ -10,7 +10,7 @@ arduino = serial.Serial('COM4', 9600)
 time.sleep(2)
 print("Connection to arduino...")
 
-                                  #training
+                              
 #reading my pic
 person1 = face_recognition.load_image_file("person1.jpg")
 #encoding face features from my pic.
@@ -20,7 +20,7 @@ person2 = face_recognition.load_image_file("person2.jpg")
 encoding_person2 = face_recognition.face_encodings(person2)[0]
 
 
-while(True):
+   while(True):
     # Capture frame by frame
     cap = cv2.VideoCapture(0)
     ret, frame = cap.read()
